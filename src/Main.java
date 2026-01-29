@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Main {
     static void main() {
@@ -6,6 +7,12 @@ public class Main {
 
         myArr.add("David");
         myArr.add("Oluwapelumi");
+        myArr.add("Happy");
+
+        Iterator<String> iterator = myArr.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
 
     }
 }
